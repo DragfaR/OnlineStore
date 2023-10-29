@@ -1,0 +1,11 @@
+.oror {
+    background-image: url(../images/bigstar.png);
+    height: 240px;
+    width: 240px;
+    display: flex;
+    background-repeat: no-repeat;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    font-size: 64;
+}
