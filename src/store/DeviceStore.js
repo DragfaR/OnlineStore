@@ -1,10 +1,11 @@
 import {makeAutoObservable} from "mobx";
 import image1 from "./component.png"
+import resistor from "../components/images/resistors.png";
 
 export default class DeviceStore {
     constructor() {
         this._types = [
-            {id:1, name: 'RESISTORS', img: "https://i.imgur.com/MePwIkC.png"},
+            {id:1, name: 'RESISTORS', img: resistor}, // Магия вот здесь прямо так же все сделал как ты сделал сам ниже в строке 21
             {id:2, name: 'CAPACITORS', img: "https://i.imgur.com/faO9rlv.png"},
             {id:3, name: 'INDUCTORS', img: "https://i.imgur.com/RprlvB5.png"},
             {id:4, name: 'PROCESSORS', img: "https://i.imgur.com/bOaT0Go.png"},
@@ -18,8 +19,8 @@ export default class DeviceStore {
             {id:2, name: 'Apple'},
         ]
         this._devices = [
-            {id:1, name: 'CA-IS3082WX', price: '127,2₽', rating:5, img: image1},
-            {id:2, name: 'CA-IS3082WX', price: '127,2₽', rating:5, img: image1},
+            {id:1, name: 'CA-IS3082WX', price: '127,2₽', rating:5, img: image1}, // типо как тут 
+            {id:2, name: 'CA-IS3082WX', price: '127,2₽', rating:5, img: image1}, // и как тут 
             {id:3, name: 'CA-IS3082WX', price: '127,2₽', rating:5, img: image1},
             {id:4, name: 'CA-IS3082WX', price: '127,2₽', rating:5, img: image1},
             {id:5, name: 'CA-IS3082WX', price: '127,2₽', rating:5, img: image1},

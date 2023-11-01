@@ -1,7 +1,6 @@
 import react, { useContext } from 'react'
 import { authRoutes, publicRoutes } from '../routes'
-import { Route } from 'react-router'
-import { Routes, Link, Navigate } from 'react-router-dom'
+import { Route, Routes,  Navigate } from 'react-router-dom'
 import { SHOP_ROUTE } from '../utils/const'
 import { Context } from '../index'
 
