@@ -1,4 +1,4 @@
-h2 {
+.h2css {
     font-family: Gilroy;
     font-size: 30px;
     font-weight: 700;
@@ -9,7 +9,7 @@ h2 {
     color: white;
 }
 
-.info {
+.info1 {
     justify-content: center;
     display: flex;
     height: 382px;

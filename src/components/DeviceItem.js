@@ -19,7 +19,7 @@ const DeviceItem = ({device}) => {
                     <div class="text12">{device.name}</div>
                 </div>
                 <div class="text13">{device.price}</div>
-                <button class="busket1">В корзину</button>
+                <button class="busket1" href=''>В корзину</button>
             </Card>
             </div>
         </Col>

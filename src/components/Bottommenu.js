@@ -8,6 +8,9 @@ import styles from './Bottommenu.css'
 import { useNavigate } from "react-router-dom";
 import { SHOP_ROUTE } from '../utils/const';
 import Shop from '../pages/Shop';
+import dom from "./headerimg/dom.png"
+import email from "./headerimg/email.png"
+import phone from "./headerimg/phone.png"
 
 const Bottommenu = () => {
     const navigate = useNavigate();
@@ -18,7 +21,7 @@ const Bottommenu = () => {
               <Navbar.Brand href="" onclick={() => navigate(SHOP_ROUTE)}>
               <div class="buttons">
                 ПРИЕЗЖАЙТЕ
-                <div class="headerimages"><img src="headerimg/dom.png"></img></div>
+                <div class="headerimages"><img src={dom}></img></div>
               </div>
               </Navbar.Brand>
               <div class="textY"><h>Москва, ул. Михалковская,<br/> дом 63Б строение 1, офис 3/1</h></div>
@@ -27,7 +30,7 @@ const Bottommenu = () => {
               <Navbar.Brand href="" onclick={() => navigate(SHOP_ROUTE)}>
               <div class="buttons">
                 ЗВОНИТЕ
-                <div class="headerimages"><img src="headerimg/phone.png"></img></div>
+                <div class="headerimages"><img src={email}></img></div>
               </div>
               </Navbar.Brand>
               <div class="textY"><h>8 993 266-55-96</h></div>
@@ -36,7 +39,7 @@ const Bottommenu = () => {
               <Navbar.Brand href="" onclick={() => navigate(SHOP_ROUTE)}>
               <div class="buttons">
                 ПИШИТЕ
-                <div class="headerimages"><img src="headerimg/email.png"></img></div>
+                <div class="headerimages"><img src={phone}></img></div>
               </div>
               </Navbar.Brand>
               <div class="textY"><h>info@osterrig.ru</h></div>

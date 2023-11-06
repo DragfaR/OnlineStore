@@ -38,7 +38,8 @@ div#navbarScroll {
 }
 
 .bottommenu {
-    width: 100%;
+    width: 115%;
+    margin-left: -8%;
     background-color: #282828;
     display: flex;
     justify-content: center;

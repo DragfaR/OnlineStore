@@ -2,47 +2,54 @@ import react from 'react'
 import AppRouter from './Admin';
 import { Card, Col, Container, Image, Row } from 'react-bootstrap';
 import styles from './DevicePage.css';
+import { Galleria } from 'primereact/galleria';
+import Slider from '../components/Slider/Slider'
+import VMenu from '../components/VMenu';
+import PopularTovar from '../components/PopularTovar'
 
 const DevicePage = () => {
   const device = {id:3, name: 'Iphone 7', price: 25000, rating:5, img:'https://ironfriends.ru/wp-content/uploads/2022/10/03_iPhone_13.jpg'}
-  const description = [
-    {id:1, title:'Оперативная память', discription:'5 гб'},
-    {id:2, title:'Камера', discription:'5 гб'},
-    {id:3, title:'Камера', discription:'5 гб'},
-    {id:4, title:'Камера', discription:'5 гб'},
-    {id:5, title:'Камера', discription:'5 гб'}
-  ]
   return (
     <Container className='mt-3'>
       <Row>
       <Col md={4}>
-        <Image width={300} height={300} src={device.img}/>
+      <Slider/>
       </Col>
-      <Col md={4}>
-        <Row className='d-flex flex-colomn align-aitem-center'>
-          <h2>{device.name}</h2>
-          <div class='oror'></div>
-        </Row>
-      </Col>
-      <Col md={4}>
-        <Card
-        className="d-flex flex-column align-items-center justify-content-arround"
-        style={{width:300, height:300, fontSize:32, border: '5px solid lightgrey'}}
-        >
-           <h3>{device.price}</h3>
-           <button variant="outline-dark">Добавить в корзину</button>
-        </Card>
-      </Col>
-      </Row>
-      <Row className='d-flex flex-column mt-3'>
-        <h1>Характеристики</h1>
-        {description.map((info, index) => 
-          <Row key={info.id}
-          style={{background:index % 2 === 0 ? 'lightgrey' : 'transparent',padding:10}}
-          >
-            {info.title}: {info.discription}
-          </Row> 
-        )}
+        <div class="assh">
+          <h2 class="cb">
+          Analog Devices AD8253ARMZ-R7</h2>
+          <div className='d-flex' class="agn">
+            <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="4" cy="4" r="4" fill="#55BC72"/></svg>
+            <b class='agn1'>В наличии: 1312 шт.</b>
+          </div>
+          <div className='d-flex' class="agn">
+            <b class='greytext'>Производитель</b>
+            <a class='bka'>: Analog Devices</a>
+          </div>
+          <div className='d-flex' class="agn">
+            <b class='greytext'>Артикул</b>
+            <a class="bka">: C33836</a>
+          </div>
+          <div className='d-flex' class="agn">
+            <b class='greytext'>Datasheet</b>
+            <a class='bka'>:</a><a class="bka1">Analog Devices AD8253ARMZ-R7 </a>
+          </div>
+          <div className='d-flex' class="agn">
+            <a class="reddownload">Скачать</a>
+            <h class='pdf'>PDF, 340 КБ</h>
+          </div>
+           <div class='lastprice'>{device.price}</div>
+           <div class='newprice'>от {device.price} ₽</div>
+           <VMenu/>
+           <br/>
+
+           <div class='dhg'>
+           <button class="vkorzinu" href=''>Добавить в корзину</button>
+           <a class='izbr' href='#'>В ИЗБРАННОЕ</a>
+            <div class="favorits12"><a href="#action1" data-rr-ui-event-key="#action1" class="nav-link"></a></div>
+            </div>
+        </div>
+        <PopularTovar/>
       </Row>
     </Container>
   );

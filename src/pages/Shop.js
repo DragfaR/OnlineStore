@@ -7,11 +7,13 @@ import Popular from '../components/Popular';
 import Info from "../components/Info"
 import Resistors from '../components/Resistors';
 import Bottommenu from '../components/Bottommenu';
+import Catalog from "../components/Catalog.js"
 
 const Shop = () => {
   return (
     <div>
     <Container>
+        <Catalog/>
         <Row className='mt-2'>
             <Info/>
             <Popular/>

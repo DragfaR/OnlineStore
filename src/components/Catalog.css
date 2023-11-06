@@ -1,0 +1,28 @@
+.lcatalog {
+    float: left;
+    text-align: left;
+}
+
+.catalogparaments {
+    float: right;
+    visibility: hidden;
+}
+
+.catalog1 {
+    display: flex;
+    height: auto;
+    width: auto;
+}
+
+.themskat:hover~.catalogparaments {
+    visibility: visible;
+    opacity: 1;
+}
+
+.verticalLine {
+    border-left: thick solid #ff0000;
+    height: 279px;
+    width: 4px;
+    float: right;
+    margin-top: -68%;
+}
